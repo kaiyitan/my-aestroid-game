@@ -1,7 +1,16 @@
 BODY, H2, H3, H4, H5, H6, TH, TD {
-font-family: arial, helvetica, sans-serif;
+    font-family: arial, helvetica, sans-serif;
+    position: flex;
 }
 H1 {
     font-size: 38px;
     font-family: arial, helvetica, sans-serif;
+}
+
+ul[title]::before {
+    content: attr(title);
+    /* then add some nice styling as needed, eg: */
+    display: block;
+    font-weight: bold;
+    padding: 4px;
 }

@@ -20,19 +20,15 @@
     </head>
     <body>
         <h1>Asteroids</h1> 
-        <div class="inline">
-            <svg id="canvas" width="600" height="600">
-                <text id="life" x='20' y='40' font-size='20'fill='#0FF'></text>
-                <text id="score" x='20' y='70' font-size='20'fill='#FF0'></text>
-                <text id="bullet" x='20' y='100' font-size='20'fill='#F0F'></text>
-                <text id="lose" x='50' y='300' font-size='50'fill='#FFF'></text>
-                <text id="win" x='30' y='300' font-size='50'fill='#FFF'></text>
-            </svg>
-        </div>
-        <div class="inline">
-            <svg id="canvas" width="600" height="600" fill="white">
-                <h2>Instructions</h2>
-                <ul>
+        <svg id="canvas" width="600" height="600">
+            <text id="life" x='20' y='40' font-size='20'fill='#0FF'></text>
+            <text id="score" x='20' y='70' font-size='20'fill='#FF0'></text>
+            <text id="bullet" x='20' y='100' font-size='20'fill='#F0F'></text>
+            <text id="lose" x='50' y='300' font-size='50'fill='#FFF'></text>
+            <text id="win" x='30' y='300' font-size='50'fill='#FFF'></text>
+        </svg>
+        <div>
+            <ul title="Instruction">
                 <li> style= "position:absolute; left: 700; top: 150">Up key: Press Up Key for ship to move forward, holding for speed up. The ship will decelerate when key release</li>
                 <li> style="position:absolute; left: 700; top:180;">left key: rotate the ship anti-clockwise</li>
                 <li> style="position:absolute; left: 700; top:210;">right key: rotate the ship clocwise</li>
@@ -44,8 +40,7 @@
                 <li> style="position:absolute; left: 700; top:440;">1.Bullet: limited number of bullets, cant shoot the asteroid when running out of bullet</li>
                 <li> style="position:absolute; left: 700; top:480;">2.Life: The number of life of the ship. When the ship clash by asteroid, it will decrease by either 1 or 2 (depends on the size of asteroid), and reset the asteroid to original position. When life less than 0, you lose！</li>
                 <li> style="position:absolute; left: 700; top:550;">3.Score: Increased when u shoot and destroy the smaller asteroid. When score larger than 10, you win!</li>
-                </ul>
-             </svg>
+            </ul>
         </div>
     </body>
 </html>
