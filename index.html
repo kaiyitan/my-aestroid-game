@@ -30,20 +30,22 @@
             </svg>
         </div>
         <div class="inline">
-            <h2>Instructions</h2>
-            <ul>
-            <li> style= "position:absolute; left: 700; top: 150">Up key: Press Up Key for ship to move forward, holding for speed up. The ship will decelerate when key release</li>
-            <li> style="position:absolute; left: 700; top:180;">left key: rotate the ship anti-clockwise</li>
-            <li> style="position:absolute; left: 700; top:210;">right key: rotate the ship clocwise</li>
-            <li> style="position:absolute; left: 700; top:240;">space bar: shoot bullet</li>
-            <li> style="position:absolute; left: 700; top:270;">The ship: A green triangle show in the middle during the game start</li>
-            <li> style="position:absolute; left: 700; top:300;">Asteroid: some random moving circle with different size (large & small), starting show up from corner, the larger with slower speed and higher damage, while the smaller with higher speed and lower damage. The larger asteroid will split to 2 smaller asteroid when it shooted, while the smaller asteroid will be destroyed when it shooted</li>
-            <li> style="position:absolute; left: 700; top:370;"> bulletBag: some random moving rectangle show up at random place. Getting the bulletBag will add 20 bullets to the ship</li>
-            <li> style="position:absolute; left: 700; top:410;">Ship attribute:</li> 
-            <li> style="position:absolute; left: 700; top:440;">1.Bullet: limited number of bullets, cant shoot the asteroid when running out of bullet</li>
-            <li> style="position:absolute; left: 700; top:480;">2.Life: The number of life of the ship. When the ship clash by asteroid, it will decrease by either 1 or 2 (depends on the size of asteroid), and reset the asteroid to original position. When life less than 0, you lose！</li>
-            <li> style="position:absolute; left: 700; top:550;">3.Score: Increased when u shoot and destroy the smaller asteroid. When score larger than 10, you win!</li>
-            </ul>
+            <svg id="canvas" width="600" height="600" fill="white">
+                <h2>Instructions</h2>
+                <ul>
+                <li> style= "position:absolute; left: 700; top: 150">Up key: Press Up Key for ship to move forward, holding for speed up. The ship will decelerate when key release</li>
+                <li> style="position:absolute; left: 700; top:180;">left key: rotate the ship anti-clockwise</li>
+                <li> style="position:absolute; left: 700; top:210;">right key: rotate the ship clocwise</li>
+                <li> style="position:absolute; left: 700; top:240;">space bar: shoot bullet</li>
+                <li> style="position:absolute; left: 700; top:270;">The ship: A green triangle show in the middle during the game start</li>
+                <li> style="position:absolute; left: 700; top:300;">Asteroid: some random moving circle with different size (large & small), starting show up from corner, the larger with slower speed and higher damage, while the smaller with higher speed and lower damage. The larger asteroid will split to 2 smaller asteroid when it shooted, while the smaller asteroid will be destroyed when it shooted</li>
+                <li> style="position:absolute; left: 700; top:370;"> bulletBag: some random moving rectangle show up at random place. Getting the bulletBag will add 20 bullets to the ship</li>
+                <li> style="position:absolute; left: 700; top:410;">Ship attribute:</li> 
+                <li> style="position:absolute; left: 700; top:440;">1.Bullet: limited number of bullets, cant shoot the asteroid when running out of bullet</li>
+                <li> style="position:absolute; left: 700; top:480;">2.Life: The number of life of the ship. When the ship clash by asteroid, it will decrease by either 1 or 2 (depends on the size of asteroid), and reset the asteroid to original position. When life less than 0, you lose！</li>
+                <li> style="position:absolute; left: 700; top:550;">3.Score: Increased when u shoot and destroy the smaller asteroid. When score larger than 10, you win!</li>
+                </ul>
+             </svg>
         </div>
     </body>
 </html>
